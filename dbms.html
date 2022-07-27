@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Database management system | techgloble |</title>
+      <link rel="icon" href="logo3.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale= 1">
+        <meta name="Keywords" content="foundamental of DBMS, what is DBMS explain it's type, design DbMS, what is data"/>
+        <meta name="Description" content="A collection of data designed to be used by diffrent people is called a databse.It is a collection of interrelated 
+        data stored together with controlled redundancy to serve one or more application in an optimal fashion. 
+          The data are stored a such a fashion that they are independent of the program of people using the data. A common and controlled 
+         approach is used in adding new data and modifying and retrieving existing data within the database."/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/410899b503.js" crossorigin="anonymous"></script>
+        <link  rel="canonical"   href="https://techgloble.in/dbms.html">
+       
+    </head>
+      <style>
+       .vertical-menu {
+         width: 20%;
+         height:100%;
+         position:absolute;
+         overflow-y:auto;
+         margin:0%;
+         padding:0%;
+        }
+
+       .vertical-menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+       }
+
+      .vertical-menu a:hover {
+       background-color: #ccc;
+      }
+
+     .vertical-menu a.active {
+      background-color:darkcyan;
+      color: white;
+   }
+   a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: rgba(110, 98, 98, 0.5);
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+.ram{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+</style>
+    <body>
+         
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="index.html"><uppercase>HOME b</uppercase></a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="dbms.html"><abr class="database management sytem">DBMS</abr> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="principal_of_programing.html">C LAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="c++.html"> C++</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="it.html"> INFORMATION TECHNOLOGY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cn.html">COMPUTER NETWORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html.html">HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="css.html"> CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="js.html"> JAVASCRIPT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="it.html"> INFORMATION TECHNOLOGY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ch.html"> COMPUTER HARDWARE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="java.html">JAVA</a>
+                  </li>
+              </ul>
+            </div>
+          </nav> 
+
+          <div class="vertical-menu">
+            <a href="#" class="active">DBMS Tutorial</a>
+            <a href="https://techgloble.in/dbms.html">Fundamentals of DBMS</a>
+            <a href="https://techgloble.in/what_is_dbms.html">What is DBMS</a>
+            <a href="https://techgloble.in/need_of_dbms.html">Need of DBMS</a>
+            <a href="https://techgloble.in/data_model.html">Data Model</a>
+            <a href="https://techgloble.in/data_language.html">Data Language</a>
+            <a href="https://techgloble.in/schema_subschema_instance.html">Schema, Subschema & Instances</a>
+            <a href="https://techgloble.in/tmdu.html">Transaction Management & Database User </a>
+            <a href="https://techgloble.in/database_structure.html">Database Structure</a>
+         <a href="https://techgloble.in/limitations_dbms.html">Limitations of DBMS</a>
+         <a href="https://techgloble.in/ex1.html">Excercise</a>  
+            
+                
+         <a href="#" class="active">Introduction to RDBMS</a>
+         <a href="https://techgloble.in/introduction_rdbms.html">Introduction to RDBMS  </a> 
+         <a href="https://techgloble.in/codd.html">Codd's Rules</a> 
+         <a href="https://techgloble.in/terminology.html">Basic Terminology of RDBMS</a> 
+           <a href="https://techgloble.in/oracle.html">Introduction to Oracle Tools</a> 
+          <a href="https://techgloble.in/enterprise_manger.html">Oracle Enterprise Tools</a>
+          
+          <a href="#" class="active">Entity Relationship Data Model  </a>      
+           <a href="https://techgloble.in/introduction_ER.html">Introduction to E-R </a> 
+          <a href="https://techgloble.in/relation_key.html">Relationship Sets & Key </a> 
+          <a href="https://techgloble.in/Maping_constraints_E-R.html">Mapping constraints & E-R Diagram</a> 
+            <a href="https://techgloble.in/connectivity_composite_entities.html">Connectivity & Composite Entities</a> 
+           <a href="https://techgloble.in/entity_list_eermodel.html">Entity List & Enhanced Entity Relationship Model </a>   
+           <a href="https://techgloble.in/superclass_&_subclass.html">Superclass & Subclass Entity Types </a> 
+           <a href="https://techgloble.in/generalization.html">Generalization & Specialization</a>   
+           <a href="https://techgloble.in/trans_er_to_table.html">Transformation of an E-R Schema to Table </a>   
+
+
+           <a href="#" class="active">Database Security & Integrity</a>
+           <a herf="https://techgloble.in/database_security_&_intergrity.html">Introduction</a>
+           <a href="https://techgloble.in/domain_rule.html">Domain Rule & constraints</a>
+           <a href="https://techgloble.in/triggers.html">Triggers</a>
+           <a href="https://techgloble.in/type_of_trigger.html">Types of triggers</a>
+           <a href="https://techgloble.in/syntax_for_creating_trigger.html">Syntax for Creating Trigger </a> 
+
+           <a href="#" class="active">Onject Oriented Database</a>
+           <a href="https://techgloble.in/intro_object_orinted_database.html"> intro Object oriented data model </a>
+           <a href=" https://techgloble.in/object_classes.html">Object classes </a>
+           <a href="https://techgloble.in/multiple_inheritance.html"> Multiple inheritance</a>
+           <a href="https://techgloble.in/obeject_oriented_language.html"> Object Oriented Language</a>
+        
+          </div>
+
+           <div class="container-fluid; background-color">
+          <div style="margin-left: 20%; padding:5px 50px;height:auto;">
+            <div class="ram">
+             <h1 class="display-4 text-dark">(1) Fundamentals of DBMS</h1><hr>
+             <h4 class="text-dark">1.1 Introduction :</h4>
+             <p><i>Before defining a database management system , We must have a clear understandiing of what database is all about.</p>
+             <ul>
+               <li>Data</li>
+               <li>Relationships</li>
+               <li>Constraints</li>
+               <li>Schema</li>
+             </ul>
+             <p> By data we mean known facts that can be recorded and that have implicit meaning.
+
+             </p>
+             <p>Data are binary computer representation stored logical entities. They are distinct pieces of information, 
+               unsually formatted in aspecial way. Software is divided into two general categories- <mark>data and programs.</mark>
+               A program is acollection of instructions for manipulating data. Data can exist in a varity of form as numbers or text 
+               on pieces of paper, as bits and bytes stored in electronic memory, or as facts stored in a person's mind.
+             </p>
+             <p>
+               In database management system, data files are the files that store the database information,
+               wheres other files, such as index files and data dictionaries, store administrative information known as <mark>metadata</mark>
+             </p>
+             <p>
+               <mark>Relationships</mark> represent a correspondence between the various data elements, constrain are predicates that define correct database<br>
+               states.<mark> Schema </mark> describes the organization data and Relationships within the database.
+             </p>
+             <h4 class="text-dark">1.2 Data Base :</h4><hr>
+             <p><mark>A collection of data designed to be used by diffrent people is called a databse.</mark>It is a collection of interrelated 
+            data stored together with controlled redundancy to serve one or more application in an optimal fashion. 
+              The data are stored a such a fashion that they are independent of the program of people using the data. A common and controlled 
+             approach is used in adding new data and modifying and retrieving existing data within the database.</p>
+             <p>A database system is basicallly a computer based record keeping system. The collection of data,usually referred to as 
+                the database, contains information about one particular enterprise. it maintains any information that may be necessary to the decision
+                -making processes involved in the management of that organization.
+             </p>
+             <p>The intention of a database is that the same collection of data should serve as many application as possible.Hence, a database
+               is often conceived of as the repository of information needed for running certain functions in a corporation or organization.
+               Such a database also the continuous modification of data needed for control of operations.
+             </p>
+              <h4 class="text-dark">1.3 Purpose of Database :</h4>
+              <p> A database system should be repository of the data needed for an organization's data processing. That data should
+                be accurate, private and protected from damage.It should be organized so that diverse applications with different data 
+                requirements can employ the data. different application programmers and different end users will have different views of the 
+                data which must be derived from a common overall  data structure.
+                Their methods of accessing or secrching the data will differ.
+              </p>
+              <p>The way in which end user want to utilize exisiting data will constantly change and in some cases demands 
+                for new use of the data will arise repidly and urgently. the extent to which these demands can be satisfied determines 
+                the overall value of the database system.
+              </p>
+              <h4 class="text-dark">1.4 Advantages of DBMS</h4>
+              <ul>
+                <li><strong>Database reduceds the data redundancy to a large extent :</strong> In non-database system , each application or department
+               has its own private filed resulting in considerable amount of redundancy of the stored data.Thus storage space is wasted. By having
+               a centralized database most of this can be avoided. we do not say or sugguest that all redundancy should be eliminated. sometimes 
+               there are sound business and technical reasons for maintaining multiple copies of the some data. In a database systems, however
+              , this redundancy can becontrolled.</li>
+              <li><strong>Database can control data inconsistency to a large extent :</strong> This is really a corollary to the above point. when
+               the same data is duplicated and change are made at one site, which is not propagated to the other site. it gives rise to
+              inconsistency. Then the two entries regarding the same data will agree. At such times the data is said to be inconsistent.
+              So if the redundancy is removed changes of having inconsistent data is also removed. 
+              </li>
+            <li><strong>Database Facilitate Sharing of Data :</strong>
+            Sharing of the data means that individual pieces of data in the database may be shared among several different user, in the sence
+            that each of those users may have access to the same piece of data and each of them may use it for different purpose.
+            
+            </li>
+            <p>The database system make sure that not only the existing application can share the data in the database, but also that new application 
+              can be developed to operate against that same stored data.
+            </p>
+            <li><STRONG>Database Enforces Standards :</STRONG> With the central control of the database, the database administrator 
+            can enforce standards.</li>
+            <li><strong>Database can ensure data security and privacy : </strong> Data Security refers to protection of data 
+            against accidental or intentional disclosure to unauthorized persons or unauthorized modification or destruction.
+            And Privacy of data refers to the rights of individuals and organizations to determine for themselves when, how and 
+             to what extend information about them is to be transmitted to others.
+            </li>
+            <li><strong>Conflicting requirements can be balanced through database :</strong> Knowing the overall 
+            requirements helps the databse designers in creating a databse design that  isbest for the organization.
+            </li>
+            </ul>
+            <h4 class="text-dark"> 1.5 Characteristics of Data in a Database : </h4>
+            <ul>
+              <li><strong>Shared :</strong> Data in a Database are shared among different user and application.</li>
+              <li><strong>Persistence : </strong>
+                Data in a database exist permanentiy in the sense the data can live beyond the scope of the process that created 
+                it.
+            </li>
+            <li><strong>Validity/Integrity/Correctness :</strong> Data should be correct with respect to the real world entity 
+            that they represent.
+            </li>
+            <li><strong>Security : </strong>Data should be protected from unauthorized accesss.</li>
+            <li><b>Consitency : </b>Whenever more than one data element in a databse represents related real-world values, the 
+             values should be consistent with respect to the relationship.
+            </li>
+            <li><strong>Non-redundancy : </strong> No two data items in a database should represent the same real-world entity. </li>
+            <li><strong>Independence :</strong>The three levels in the <abr title="internal, conceptual and external"><b>Schema</b></abr>
+            should be independent of each other so that the changes in the schema at one level should not afffect the other levels.</li>
+            </ul>
+            <h4 class="text-dark">1.6 Limitations of Database :</h4>
+            <ul>
+              <li>Encoded data(data hard-coded in the applicaion) inflexiblity.</li>
+              <li>Interdependence between programs and data files.</li>
+              <li>Data repetition or redundancy.</li>
+              <li>Data inconsistency.</li>
+              <li>Lack of data integrity.</li>
+              <li>Ad hoc representation of relationships.</li>
+              <li>Ad hoc data management techniques.</li>
+              <li>Non-uniform back-up and recovery methods.</li>
+              <li>Lack of foolproof data security machanisms.</li>
+              <li>Lack of cordination across applications using common data.</li>
+            </ul> 
+            </div>
+            </div> 
+            </div>
+            <a href="dbms.html" class="previous">&laquo; Previous</a>
+            <a href="what_is_dbms.html" class="next">Next &raquo;</a></div>
+            
+          
+            <!-- <div class="card card-body card-text"> -->
+         
+              <footer class="page-footer font-small blue-grey lighten-5">
+              
+                <div style="background-color: #21d192;">
+                  <div class="container">
+              
+                  
+                    <div class="row py-4 d-flex align-items-center">
+              
+                    
+                      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social website!</h6>
+                      </div>
+                      
+              
+                      
+                      <div class="col-md-6 col-lg-7 text-center text-md-right">
+              
+                        
+                        <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100008578805000">
+                          <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        
+                        <a class="li-ic" href="https://www.linkedin.com/in/ramjee-chaurasiya-040154230">
+                          <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        
+                        <a class="ins-ic" href="https://www.instagram.com/invites/contact/?i=1fjzakcv2e884&utm_content=3e4g4k4">
+                          <i class="fab fa-instagram white-text"> </i>
+                        </a>
+              
+                      </div>
+                      
+              
+                    </div>
+                    
+              
+                  </div>
+                </div>
+              
+                
+                <div class="container text-center text-md-left mt-5">
+              
+                  
+                  <div class="row mt-3 dark-grey-text">
+              
+                    
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+              
+                      
+                      <h6 class="text-uppercase font-weight-bold">TechGloble</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p> <p><i>We create simplified and interactive <br>learning experiences <BR></i>
+                        Learning technical course should be easy to understand<br>and available for everyone,<br>everyhere. </p><br>
+                        Techgloble is a web site for technical course, <br>covering all the concepts of computer science.
+                        TechGloble  was created in 2021, and derives<br> its name from the world wide web. <br></p>
+              
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                    
+                      <h6 class="text-uppercase font-weight-bold">Tutorial</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <a class="dark-grey-text" href="dbms.html">DBMS</a>
+                      </p>
+                      <p>
+                        <a class="dark-grey-text" href="cn.html">Computer Network</a>
+                      </p>
+                      <p>
+                        <a class="dark-grey-text" href="sql.html">Mysql</a>
+                      </p>
+                      <p>
+                        <a class="dark-grey-text" href="it.html">Information Technology</a>
+                      </p>
+              
+                    </div>
+                  
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                      <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <a class="dark-white-text" href="term_and_condition.html">Term & Condition</a>
+                      </p>
+                      <p>
+                        <a class="dark-white-text" href="disclamer.html">Disclaimer</a>
+                      </p>
+                      <p>
+                        <a class="dark-white-text" href="privacy_policy.html">Privacy & Policy</a>
+                      </p>
+                      <p>
+                        <a class="dark-white-text" href="about.html">About Us</a>
+                      </p>
+                      
+              
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+                    
+                      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <i class="fas fa-home mr-3"></i> Panna,Madhya pradesh,India</p>
+                      <p>
+                        <i class="fas fa-envelope mr-3"></i> techglobal5654@gmail.com</p>
+                      <p>
+                        <i class="fas fa-phone mr-3"></i> 6265480087</p>
+              
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright text-center text-black-50 py-3">© 2022 Copyright:
+                  <a class="dark-grey-text" href="https://techgloble.in"> TechGloble.in</a>
+                </div>
+              </footer>
+              </div>
+              </i>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

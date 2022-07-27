@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title> Data Language IN DBMS | DBMS |</title>
+      <link rel="icon" href="logo3.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale= 0.8">
+        <meta name="Keywords" content="what is data language in DBMS,what are data language,data language definition,data language with example">
+        <meta name="Description" content="Database languages, also known as query languages or data query languages, 
+        are a classification of programming languages that developers use to define and access databases,
+         which are collections of organized data that users can access electronically.">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        
+        <link  rel="canonical"   href="https://techgloble.in/data_language.html">
+</head>
+<style>
+        .vertical-menu {
+          width: 20%;
+          height:100%;
+          position: absolute;
+          overflow-y:auto;
+          margin:0%;
+          padding:0%;
+         }
+ 
+        .vertical-menu a {
+         background-color: #eee;
+         color: black;
+         display: block;
+         padding: 12px;
+         text-decoration: none;
+        }
+ 
+       .vertical-menu a:hover {
+        background-color: #ccc;
+       }
+ 
+      .vertical-menu a.active {
+        background-color:darkcyan; 
+       color: white;
+      }
+       a {
+      text-decoration: none;
+      display: inline-block;
+       padding: 8px 16px;
+  
+       }
+
+       a:hover {
+       background-color: #ddd;
+       color: black;
+      }
+
+       .previous {
+      background-color: #f1f1f1;
+       color: black;
+
+     }
+
+      .next {
+      background-color: #04AA6D;
+      color: white;
+     }
+
+    .round {
+    border-radius: 50%;
+    }
+    .ram{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ </style>
+<body>
+         
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="index.html"><uppercase>HOME</uppercase></a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="dbms.html"><abr class="database management sytem">DBMS</abr> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="principal_of_programing.html">C LAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="c++.html"> C++</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="it.html"> INFORMATION TECHNOLOGY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cn.html">COMPUTER NETWORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html.html">HTML </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="css.html"> CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="js.html"> JAVASCRIPT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="python"> PYTHON</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ch.html"> COMPUTER HARDWARE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="java.html">JAVA</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          
+         <div class="vertical-menu">
+          <a href="#" class="active">DBMS Tutorial</a>
+          <a href="https://techgloble.in/dbms.html">Fundamentals of DBMS</a>
+          <a href="https://techgloble.in/what_is_dbms.html">What is DBMS</a>
+          <a href="https://techgloble.in/need_of_dbms.html">Need of DBMS</a>
+          <a href="https://techgloble.in/data_model.html">Data Model</a>
+          <a href="https://techgloble.in/data_language.html">Data Language</a>
+          <a href="https://techgloble.in/schema_subschema_instance.html">Schema, Subschema & Instances</a>
+          <a href="https://techgloble.in/tmdu.html">Transaction Management & Database User </a>
+          <a href="https://techgloble.in/database_structure.html">Database Structure</a>
+       <a href="https://techgloble.in/limitations_dbms.html">Limitations of DBMS</a>
+       <a href="https://techgloble.in/ex1.html">Excercise</a>  
+          
+              
+       <a href="#" class="active">Introduction to RDBMS</a>
+       <a href="https://techgloble.in/introduction_rdbms.html">Introduction to RDBMS  </a> 
+       <a href="https://techgloble.in/codd.html">Codd's Rules</a> 
+       <a href="https://techgloble.in/terminology.html">Basic Terminology of RDBMS</a> 
+         <a href="https://techgloble.in/oracle.html">Introduction to Oracle Tools</a> 
+        <a href="https://techgloble.in/enterprise_manger.html">Oracle Enterprise Tools</a>
+        
+        <a href="#" class="active">Entity Relationship Data Model  </a>      
+         <a href="https://techgloble.in/introduction_ER.html">Introduction to E-R </a> 
+        <a href="https://techgloble.in/relation_key.html">Relationship Sets & Key </a> 
+        <a href="https://techgloble.in/Maping_constraints_E-R.html">Mapping constraints & E-R Diagram</a> 
+          <a href="https://techgloble.in/connectivity_composite_entities.html">Connectivity & Composite Entities</a> 
+         <a href="https://techgloble.in/entity_list_eermodel.html">Entity List & Enhanced Entity Relationship Model </a>   
+         <a href="https://techgloble.in/superclass_&_subclass.html">Superclass & Subclass Entity Types </a> 
+         <a href="https://techgloble.in/generalization.html">Generalization & Specialization</a>   
+         <a href="https://techgloble.in/trans_er_to_table.html">Transformation of an E-R Schema to Table </a>   
+
+
+         <a href="#" class="active">Database Security & Integrity</a>
+         <a herf="https://techgloble.in/database_security_&_intergrity.html">Introduction</a>
+         <a href="https://techgloble.in/domain_rule.html">Domain Rule & constraints</a>
+         <a href="https://techgloble.in/triggers.html">Triggers</a>
+         <a href="https://techgloble.in/type_of_trigger.html">Types of triggers</a>
+         <a href="https://techgloble.in/syntax_for_creating_trigger.html">Syntax for Creating Trigger </a> 
+
+         <a href="#" class="active">Onject Oriented Database</a>
+         <a href="https://techgloble.in/intro_object_orinted_database.html"> intro Object oriented data model </a>
+         <a href=" https://techgloble.in/object_classes.html">Object classes </a>
+         <a href="https://techgloble.in/multiple_inheritance.html"> Multiple inheritance</a>
+         <a href="https://techgloble.in/obeject_oriented_language.html"> Object Oriented Language</a>
+
+     
+         </div>
+         
+         <div style="margin-left: 20%; padding:5px 50px;height:auto;">
+          <div class="ram">
+            <h1 class="display-4 text-dark ">(1) Data Languages </h1><hr>
+            <p> Database languages, also known as query languages or data query languages, 
+              are a classification of programming languages that developers use to define and access databases,
+               which are collections of organized data that users can access electronically.</p>
+               <h4> there are four type of data language :</h4>
+               <ol type="1">
+                <li><b>Data Defination Language (DDl) :</b></li> 
+                <p>The language used to define database is known as Data Defination Language. The commands used for defining 
+                  database are known as DDL command. DDL includes all commands used for altering tables, droping tables and defining
+                  constrains.
+                </p>  
+                <li><b>Data Manipulation Language (DML) :</b></li> 
+                <p> The language that table enable users to access or manipulate data is known as Data Manipulation
+                  Language. The commands used for accessing  and manipulation data are known as DML commands. DML include commands
+                  for insertion, deletion and updation besides retrieval. <p>DMLs are basically of two types:
+
+                  </p>
+                  <ol type="i">
+                    <li><b>Procedural DMLs :</b> <p>It requires user to specify what data are needed and how to get those data.
+                      The codes generated by procedural DMLs is efficient.
+                    </p></li> 
+                    <li><b>Non-procedural DMLs :</b><p>It requires user only to specify what data are needed. In non- 
+                      procedural DMLs the user does not specify how to get those data. The code generated by non-procedural DMLs is less 
+                      efficient as compared to procedural DMLs.
+                    </p></li>
+                  </ol>
+                </p>  
+                <li><b>Data control language (DCL) :</b><p> The language used to control database is known as data control language.
+                 The commands used to control a database are known as DCL Commands. DCL controls the database by administrating previlages
+                 & commiting (saving) of data.
+                </p></li> 
+                <li><b>Transaction Control Language (TCL) :
+                </b><p>
+                  The process of performing operation over the dataabse is known as transaction. When ever certain transaction 
+                  is performed over database then it must be performed under the control. The language used to perfrom such operation
+                  is known as TCL.
+                </p></li>          
+               </ol>
+               <h4 class="text-dark ">(2) Database abstraction :</h4>
+               <p>As we  know that a collection if interrelated files and a set of programs  that allows users  to access and modify 
+                 these files is known as a database management system. A major purpose of a database system is to provide the users only 
+                 that much information  that is required by them. This means that the the system does not disclose all the details of data, rather
+                 it hides certain details of hoe the data is stored and maintained. A good database system ensures easy, smooth and efficient data 
+                 structure  in such a way so that every type of database user; end user, application system  analyst and physical storage system analyst,
+                 is able to access its desired information efficient.
+               </p>
+               <p>An end user is a person who is not a computer trained person uses the database to retrive some information. 
+               For example, in a break database, a customer, who wants to know how much balance remains who wants to know how much
+               balance remains in his account, is an end-user. An application system analyst is the one who concerned  about  all of 
+                the Database of logical level i.e., what all data constitue the database, what are the relationship between the data 
+                entities etc. Without considerning the physical Implementation details.
+               </p>
+               <p>
+                The third type of user, the physical storage system analyst is concerned with the physical Implementation details of the 
+                database. i.e, how would the database be storedon which storage device? what will be the starting address of the database?
+                What will bethe storage technique? etc.
+               </p>
+               <h4>Various Levels of Database Abstraction :</h4>
+               <P>A database is implemented through three general levels, internal, conceptual and external so as cater to the need
+                 of its users.
+               </P>
+                <ol>
+                  <li><b>Internal Level (physical Level) :</b> The lowest level of abstraction, the internal level is one closet to physical 
+                    storage. This level is also  sometimes termed as physical level. it describes how the data are actually stored on the storage
+                    medium. At this level, complex low-level data structure are described in details.
+                  </li>
+                  <li><b>Conceptual Level :</b> This level of abstraction describe what data are actually stored in the database.
+                  it also describes the relationships existing among data. At this level, the database is described logically in terms of 
+                  simple data structure. The users of this level are not concerned with how logical data structure will be implemented
+                  at the physical level. Rather, they just are concerned about what information is to be kept in the database.
+                  </li>
+                  <li><b>External Level (view Level) :</b> This is the level closed to the users and is concerned with the 
+                  way in which that data are viewed by individual users. Most of the user of the database are not concerned with all 
+                  the information contained in the database. Instead, they need only a part of though the bank database stores a lot many information,
+                  an account holder is interested only in his account details and not with the rest of the information stored in the database.
+                  To simply such users, interaction ith the system, this level of abstraction is defined. The system, thus provided many views
+                   for the same database. the following fig.illustrates the interrelationship among these three levels of abstraction.
+                  </li>
+                  <!-- <img src="image/da.png" width="100%" height="800px"> -->
+                </ol>
+
+
+
+
+
+
+
+</div></div>
+
+            <a href="data_model.html" class="previous">&laquo; Previous</a>
+            <a href="schema_subschema_instance.html" class="next">Next &raquo;</a></i></div>
+            
+
+
+
+
+
+
+            <!-- <div class="card card-body card-text"> -->
+         
+              <footer class="page-footer font-small blue-grey lighten-5">
+              
+                <div style="background-color: #21d192;">
+                  <div class="container">
+              
+                  
+                    <div class="row py-4 d-flex align-items-center">
+              
+                    
+                      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social website!</h6>
+                      </div>
+                      
+              
+                      
+                      <div class="col-md-6 col-lg-7 text-center text-md-right">
+              
+                        
+                        <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100008578805000">
+                          <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        
+                        <a class="li-ic" href="https://www.linkedin.com/in/ramjee-chaurasiya-040154230">
+                          <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        
+                        <a class="ins-ic" href="https://www.instagram.com/invites/contact/?i=1fjzakcv2e884&utm_content=3e4g4k4">
+                          <i class="fab fa-instagram white-text"> </i>
+                        </a>
+              
+                      </div>
+                      
+              
+                    </div>
+                    
+              
+                  </div>
+                </div>
+              
+                
+                <div class="container text-center text-md-left mt-5">
+              
+                  
+                  <div class="row mt-3 dark-grey-text">
+              
+                    
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+              
+                      
+                      <h6 class="text-uppercase font-weight-bold">TechGloble</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p> <p><i>We create simplified and interactive <br>learning experiences <BR></i>
+                        Learning technical course should be easy to understand<br>and available for everyone,<br>everyhere. </p><br>
+                        Techgloble is a web site for technical course, <br>covering all the concepts of computer science.
+                        TechGloble  was created in 2021, and derives<br> its name from the world wide web. <br></p>
+              
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                    
+                      <h6 class="text-uppercase font-weight-bold">Tutorial</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <a class="dark-grey-text" href="dbms.html">DBMS</a>
+                      </p>
+                      <p>
+                        <a class="dark-grey-text" href="cn.html">Computer Network</a>
+                      </p>
+                      <p>
+                        <a class="dark-grey-text" href="sql.html">Mysql</a>
+                      </p>
+                      <p>
+                        <a class="dark-grey-text" href="it.html">Information Technology</a>
+                      </p>
+              
+                    </div>
+                  
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                      <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <a class="dark-white-text" href="privacy_policy.html">Privacy & Policy</a>
+                      </p>
+                      <p>
+                        <a class="dark-white-text" href="disclamer.html">Disclaimer</a>
+                      </p>
+                      <p>
+                        <a class="dark-white-text" href="term_and _condtitions.html">Terms & Conditions</a>
+                      </p>
+                      <p>
+                        <a class="dark-white-text" href="about.html">About Us</a>
+                      </p>
+              
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+                    
+                      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                      <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <i class="fas fa-home mr-3"></i> Panna,Madhya pradesh,India</p>
+                      <p>
+                        <i class="fas fa-envelope mr-3"></i> techglobal5654@gmail.com</p>
+                      <p>
+                        <i class="fas fa-phone mr-3"></i> 6265480087</p>
+              
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright text-center text-black-50 py-3">© 2022 Copyright:
+                  <a class="dark-grey-text" href="https://techgloble.in"> TechGloble.in</a>
+                </div>
+              </footer>
+              </div>
+              </i>
+
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+     </body>

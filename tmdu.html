@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>   Transaction Management  with example  |DBMS|</title>
+      <link rel="icon" href="logo3.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale= 0.8">
+        <meta name="Keywords" content="Transaction management in DBMS with example,what is Database user and it's type.">
+        <meta name="Description" content="Transaction is a collection of operations. For example a fund transfer, in which one account (say Q) is
+        debited and another account (say P) is credited. A primary goal of a database system is to provide an environment for retrieving information from and storing 
+        new information into the database.">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        
+        <link  rel="canonical"   href="https://techgloble.in/tmdu.html">
+</head>
+<style>
+        .vertical-menu {
+          width: 20%;
+          height:100%;
+          position: absolute;
+          overflow-y:auto;
+          margin:0%;
+          padding:0%;
+         }
+ 
+        .vertical-menu a {
+         background-color: #eee;
+         color: black;
+         display: block;
+         padding: 12px;
+         text-decoration: none;
+        }
+ 
+       .vertical-menu a:hover {
+        background-color: #ccc;
+       }
+ 
+      .vertical-menu a.active {
+        background-color:darkcyan;
+       color: white;
+    }
+    a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+.ram{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+</style>
+<body>
+         
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.html"><uppercase>HOME</uppercase></a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="dbms.html"><abr class="database management sytem">DBMS</abr> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="principal_of_programing.html">C LAN</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="c++.html"> C++</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="it.html"> INFORMATION TECHNOLOGY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cn.html">COMPUTER NETWORK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html.html">HTML </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="css.html"> CSS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="js.html"> JAVASCRIPT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="python.html"> PYTHON</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ch.html"> COMPUTER HARDWARE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="java.html">JAVA</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        
+       <div class="vertical-menu">
+        <a href="#" class="active">DBMS Tutorial</a>
+        <a href="https://techgloble.in/dbms.html">Fundamentals of DBMS</a>
+        <a href="https://techgloble.in/what_is_dbms.html">What is DBMS</a>
+        <a href="https://techgloble.in/need_of_dbms.html">Need of DBMS</a>
+        <a href="https://techgloble.in/data_model.html">Data Model</a>
+        <a href="https://techgloble.in/data_language.html">Data Language</a>
+        <a href="https://techgloble.in/schema_subschema_instance.html">Schema, Subschema & Instances</a>
+        <a href="https://techgloble.in/tmdu.html">Transaction Management & Database User </a>
+        <a href="https://techgloble.in/database_structure.html">Database Structure</a>
+     <a href="https://techgloble.in/limitations_dbms.html">Limitations of DBMS</a>
+     <a href="https://techgloble.in/ex1.html">Excercise</a>  
+        
+            
+     <a href="#" class="active">Introduction to RDBMS</a>
+     <a href="https://techgloble.in/introduction_rdbms.html">Introduction to RDBMS  </a> 
+     <a href="https://techgloble.in/codd.html">Codd's Rules</a> 
+     <a href="https://techgloble.in/terminology.html">Basic Terminology of RDBMS</a> 
+       <a href="https://techgloble.in/oracle.html">Introduction to Oracle Tools</a> 
+      <a href="https://techgloble.in/enterprise_manger.html">Oracle Enterprise Tools</a>
+      
+      <a href="#" class="active">Entity Relationship Data Model  </a>      
+       <a href="https://techgloble.in/introduction_ER.html">Introduction to E-R </a> 
+      <a href="https://techgloble.in/relation_key.html">Relationship Sets & Key </a> 
+      <a href="https://techgloble.in/Maping_constraints_E-R.html">Mapping constraints & E-R Diagram</a> 
+        <a href="https://techgloble.in/connectivity_composite_entities.html">Connectivity & Composite Entities</a> 
+       <a href="https://techgloble.in/entity_list_eermodel.html">Entity List & Enhanced Entity Relationship Model </a>   
+       <a href="https://techgloble.in/superclass_&_subclass.html">Superclass & Subclass Entity Types </a> 
+       <a href="https://techgloble.in/generalization.html">Generalization & Specialization</a>   
+       <a href="https://techgloble.in/trans_er_to_table.html">Transformation of an E-R Schema to Table </a>   
+
+
+       <a href="#" class="active">Database Security & Integrity</a>
+       <a herf="https://techgloble.in/database_security_&_intergrity.html">Introduction</a>
+       <a href="https://techgloble.in/domain_rule.html">Domain Rule & constraints</a>
+       <a href="https://techgloble.in/triggers.html">Triggers</a>
+       <a href="https://techgloble.in/type_of_trigger.html">Types of triggers</a>
+       <a href="https://techgloble.in/syntax_for_creating_trigger.html">Syntax for Creating Trigger </a> 
+
+       <a href="#" class="active">Onject Oriented Database</a>
+       <a href="https://techgloble.in/intro_object_orinted_database.html"> intro Object oriented data model </a>
+       <a href=" https://techgloble.in/object_classes.html">Object classes </a>
+       <a href="https://techgloble.in/multiple_inheritance.html"> Multiple inheritance</a>
+       <a href="https://techgloble.in/obeject_oriented_language.html"> Object Oriented Language</a>
+    
+       </div>
+       
+       <div style="margin-left: 20%; padding:5px 50px;height:auto;">
+          <h2 class="display-4 text-dark ">(1) Transaction Management : </h2><hr>
+          <p>Transaction is a collection of operations. For example a fund transfer, in which one account (say Q) is
+                 debited and another account (say P) is credited. Clearly, it is essential that either both the credit 
+                 and debit occur, or that neither occur i.e., the funds transfer must happen in its entirety or not at all. 
+                 This all not at all requirement is called<b> atomicity.</b> It is also essential that the execution of the funds transfer 
+                 preserve the consistency of the database. That is, the value of the sum P + Q must be preserved. 
+                 This correctness requirement is called <b>consistency.</b> And after the successful execution of a funds transfer,
+                 the new values of accounts P and Q must persist, despite the possibility of system failure.
+                 This persistence requirement is called <b>durability.</b> A <b>transaction</b> is a collection of operations that performs 
+                 a single logical function in adatabase application. Each transaction is a unit of both atomicity and consistency. 
+                 Thus, it is required that transactions do not violate any database consistency constraints. 
+                 That is, the database was consistent when a transaction started, the database must be consistent when the
+                 transaction successfully terminates. It is the programmer's responsibility to define properly the various
+                 transactions, so that each preserves the consistency of the database. Transactions Management Component has the
+                 responsibilities of ensuring. </p>
+                 <h4 class="text-dark"> (2) Database User :</h4>
+                 <p>A primary goal of a database system is to provide an environment for retrieving information from and storing 
+                     new information into the database. There are four different types of database-system users, differentiated by
+                      the way that they expect to interact with the systern.<br>
+                      <b>(1) Application programmers</b> are computer professionals who interact with the system through DML calls
+                       which are embedded in a program written in a host language (for example Cobol, Pascal, C).
+                       These prograrns are commonly referred to as application programs.<p> Since the DML syntax is usually markedly 
+                           different from the host language syntax, DML calls are usually prefaced by a special character so that the
+                            appropriate code can be generated. A special preprocessor, called the DML precompiler, converts the DML
+                             statement to normal procedure calls in the host language. The resulting program is then run throuh the
+                              host-language compiler, which generates appropriate object code.<br>
+                              <b>(2) Sophisticated users</b> interact with the system without writing programs. Instead, they form 
+                              their requests in a database query language. Each such uanb is submitted to a query processor whose
+                               function is to break down DML statement into instructions that the storage manager understands.
+                                Analysts who submit queries explore data in the database fall in this category. <br>
+                                <b>(3) Specialized users</b> are sophisticated users who write specialized database applications
+                                 that do not fit into the traditional data-processing framework. Among these applications are computer-aided
+                                  design systems, knowledge base and expert systems, systems that store data with complex data types
+                                   (for example, graphics data and audio data) and environment-modeling systems.<br>
+                                   <b> (4) Naive users </b>are unsophisticated users who interact with the system by invoking one the
+                                    permanent application programs that have been written previously. For example, a bank customer who
+                                     needs to transfer Rs. 500 from account A to account B invokes a program called transfer.
+                                      This program asks the customer for the amount of money to be transferred, the account from
+                                       which the monery is to be transferred and the account to which the money is to be transferred. </p>
+                                     </p>
+
+
+
+
+                                    </div>
+                                       <a href="schema_subschema_instance.html" class="previous">&laquo; Previous</a>
+                                       <a href="database_structure.html" class="next">Next &raquo;</a></i></div>
+                                       
+                                       <!-- <div class="card card-body card-text"> -->
+         
+                                        <footer class="page-footer font-small blue-grey lighten-5">
+                                        
+                                          <div style="background-color: #21d192;">
+                                            <div class="container">
+                                        
+                                            
+                                              <div class="row py-4 d-flex align-items-center">
+                                        
+                                              
+                                                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                                  <h6 class="mb-0">Get connected with us on social website!</h6>
+                                                </div>
+                                                
+                                        
+                                                
+                                                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                                        
+                                                  
+                                                  <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100008578805000">
+                                                    <i class="fab fa-facebook-f white-text mr-4"> </i>
+                                                  </a>
+                                                  
+                                                  <a class="li-ic" href="https://www.linkedin.com/in/ramjee-chaurasiya-040154230">
+                                                    <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                                                  </a>
+                                                  
+                                                  <a class="ins-ic" href="https://www.instagram.com/invites/contact/?i=1fjzakcv2e884&utm_content=3e4g4k4">
+                                                    <i class="fab fa-instagram white-text"> </i>
+                                                  </a> 
+                                        
+                                                </div>
+                                                
+                                        
+                                              </div>
+                                              
+                                        
+                                            </div>
+                                          </div>
+                                        
+                                          
+                                          <div class="container text-center text-md-left mt-5">
+                                        
+                                            
+                                            <div class="row mt-3 dark-grey-text">
+                                        
+                                              
+                                              <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                                        
+                                                
+                                                <h6 class="text-uppercase font-weight-bold">TechGloble</h6>
+                                                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                                <p> <p><i>We create simplified and interactive <br>learning experiences <BR></i>
+                                                  Learning technical course should be easy to understand<br>and available for everyone,<br>everyhere. </p><br>
+                                                  Techgloble is a web site for technical course, <br>covering all the concepts of computer science.
+                                                  TechGloble  was created in 2021, and derives<br> its name from the world wide web. <br></p>
+                                        
+                                              </div>
+                                              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                        
+                                              
+                                                <h6 class="text-uppercase font-weight-bold">Tutorial</h6>
+                                                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                                <p>
+                                                  <a class="dark-grey-text" href="dbms.html">DBMS</a>
+                                                </p>
+                                                <p>
+                                                  <a class="dark-grey-text" href="cn.html">Computer Network</a>
+                                                </p>
+                                                <p>
+                                                  <a class="dark-grey-text" href="sql.html">Mysql</a>
+                                                </p>
+                                                <p>
+                                                  <a class="dark-grey-text" href="it.html">Information Technology</a>
+                                                </p>
+                                        
+                                              </div>
+                                            
+                                              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                        
+                                                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                                                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                                <p>
+                                                  <a class="dark-white-text" href="privacy_policy.html">Privacy & Policy</a>
+                                                </p>
+                                                <p>
+                                                  <a class="dark-white-text" href="disclamer.html">Disclaimer</a>
+                                                </p>
+                                                <p>
+                                                  <a class="dark-white-text" href="term_and _condtitions.html">Terms & Conditions</a>
+                                                </p>
+                                                <p>
+                                                  <a class="dark-white-text" href="about.html">About Us</a>
+                                                </p>
+                                        
+                                              </div>
+                                              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                        
+                                              
+                                                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                                                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                                                <p>
+                                                  <i class="fas fa-home mr-3"></i> Panna,Madhya pradesh,India</p>
+                                                <p>
+                                                  <i class="fas fa-envelope mr-3"></i> techglobal5654@gmail.com</p>
+                                                <p>
+                                                  <i class="fas fa-phone mr-3"></i> 6265480087</p>
+                                        
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="footer-copyright text-center text-black-50 py-3">© 2022 Copyright:
+                                            <a class="dark-grey-text" href="hhtps://techgloble.in"> TechGloble.in</a>
+                                          </div>
+                                        </footer>
+                                        </div>
+                                        </i>
+                                       
+                             
+                             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+                             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+                             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+                              </body>
+                             </html>      
